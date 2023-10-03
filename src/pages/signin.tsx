@@ -11,15 +11,7 @@ export default function SignIn({ providers }: { providers: AppProps }) {
       <h1>Sign in</h1>
       <div>
         {Object.values(providers).map((provider) => (
-          <button
-            key={provider.id}
-            onClick={() =>
-              signIn(provider.id, {
-                callbackUrl:
-                  "https://simply-smart-gsf4tu24g-connervigil.vercel.app",
-              })
-            }
-          >
+          <button key={provider.id} onClick={() => signIn(provider.id)}>
             Sign in with Google
           </button>
         ))}
