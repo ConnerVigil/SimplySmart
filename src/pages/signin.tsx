@@ -15,7 +15,8 @@ export default function SignIn({ providers }: { providers: AppProps }) {
             key={provider.id}
             onClick={() =>
               signIn(provider.id, {
-                callbackUrl: "/",
+                callbackUrl:
+                  "https://simply-smart-gsf4tu24g-connervigil.vercel.app",
               })
             }
           >
