@@ -15,7 +15,7 @@ export default function SignIn({ providers }: { providers: AppProps }) {
             key={provider.id}
             onClick={() =>
               signIn(provider.id, {
-                callbackUrl: `${window.location.origin}/api/auth/callback/${provider.id}`,
+                callbackUrl: `${window.location.origin}`,
               })
             }
           >
