@@ -11,7 +11,14 @@ export default function SignIn({ providers }: { providers: AppProps }) {
       <h1>Sign in</h1>
       <div>
         {Object.values(providers).map((provider) => (
-          <button key={provider.id} onClick={() => signIn(provider.id)}>
+          <button
+            key={provider.id}
+            onClick={() =>
+              signIn(provider.id, {
+                callbackUrl: `${window.location.origin}/api/auth/callback/${provider.id}`,
+              })
+            }
+          >
             Sign in with Google
           </button>
         ))}
