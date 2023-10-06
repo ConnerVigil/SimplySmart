@@ -4,7 +4,12 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #2e026d, #15162c);
+  background-image: linear-gradient(to bottom, #5ecba1, #8e7dff);
+}
+
+.mainHome {
+  background-image: linear-gradient(to bottom, #5ecba1, #8e7dff);
+  min-height: 100vh;
 }
 
 .container {
@@ -60,10 +65,6 @@
   .title {
     font-size: 5rem;
   }
-}
-
-.pinkSpan {
-  color: hsl(280 100% 70%);
 }
 
 .cardRow {
